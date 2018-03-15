@@ -1,0 +1,21 @@
+<%= f_name %> You're <%= age %>
+Your favorite food is <%= food %>
+Your favorite drink is <%= drink %>
+
+<h1>What are your favorite numbers?</h1>
+
+<form method="post" action="numbers">
+	<input type="number" name="number_1" placeholder="First Number">
+	<br>
+	<input type="number" name="number_2" placeholder="Second Number">
+	<br>
+	<input type="number" name="number_3" placeholder="Third Number">
+	<br>
+	<br>
+	<input type="hidden" name="f_name" value = "<%= f_name %>">
+	<input type="hidden" name="age" value = "<%= age %>">
+	<input type="hidden" name="food" value = "<%= food %>">
+	<input type="hidden" name="drink" value = "<%= drink %>">
+
+	<input type="submit" value="Subbymittypoo">
+</form>
